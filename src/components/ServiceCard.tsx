@@ -14,19 +14,19 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, link }) => {
   return (
-    <Card className="h-full transition-all hover:shadow-md">
+    <Card className="h-full transition-all hover:shadow-md border-none bg-gray-50">
       <CardHeader>
-        <div className="mb-4 p-3 bg-primary/10 rounded-md w-fit">
+        <div className="mb-5">
           {icon}
         </div>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="text-xl font-medium">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-base">{description}</CardDescription>
+        <CardDescription className="text-base font-light">{description}</CardDescription>
       </CardContent>
       <CardFooter>
-        <Button variant="ghost" asChild className="group">
-          <Link to={link} className="flex items-center gap-2">
+        <Button variant="ghost" asChild className="group p-0 hover:bg-transparent">
+          <Link to={link} className="flex items-center gap-2 text-primary">
             Learn More
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>

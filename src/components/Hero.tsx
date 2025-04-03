@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({
   };
 
   return (
-    <div className={`relative py-20 md:py-32 ${backgroundImage ? 'bg-cover bg-center' : 'bg-gradient-to-br from-primary/10 to-secondary/5'}`}
+    <div className={`relative py-28 md:py-40 ${backgroundImage ? 'bg-cover bg-center' : 'bg-white'}`}
       style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}}
     >
       {/* Overlay if there's a background image */}
@@ -37,11 +37,11 @@ const Hero: React.FC<HeroProps> = ({
       )}
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className={`flex flex-col max-w-3xl mx-auto ${alignmentClasses[alignment]} ${backgroundImage ? 'text-white' : ''}`}>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">{title}</h1>
-          <p className="text-xl md:text-2xl mb-8 text-opacity-90">{subtitle}</p>
+        <div className={`flex flex-col max-w-4xl mx-auto ${alignmentClasses[alignment]}`}>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light mb-6 tracking-tight">{title}</h1>
+          <p className="text-xl md:text-2xl mb-10 font-light opacity-90 max-w-2xl">{subtitle}</p>
           {ctaText && (
-            <Button size="lg" asChild className="group">
+            <Button size="lg" variant="outline" asChild className="group rounded-none border-2 hover:bg-transparent hover:text-primary">
               <Link to={ctaLink} className="flex items-center gap-2">
                 {ctaText}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
