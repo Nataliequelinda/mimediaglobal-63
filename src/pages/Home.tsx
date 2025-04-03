@@ -6,17 +6,21 @@ import TestimonialsSection from '../components/sections/TestimonialsSection';
 import CtaSection from '../components/sections/CtaSection';
 import PortfolioSection from '../components/sections/PortfolioSection';
 import ClientsSection from '../components/sections/ClientsSection';
+import AboutSection from '../components/sections/AboutSection';
+import ExpertsSection from '../components/sections/ExpertsSection';
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-[#FAF9F6]">
       <HeroSection />
+      <AboutSection />
       <ServicesSection />
+      <ExpertsSection />
       <ApproachSection />
       <TestimonialsSection />
-      <CtaSection />
       <PortfolioSection />
       <ClientsSection />
+      <CtaSection />
     </div>
   );
 };
