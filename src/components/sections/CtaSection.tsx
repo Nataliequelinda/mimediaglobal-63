@@ -1,6 +1,5 @@
 
 import { Button } from '../ui/button';
-import { Link } from 'react-router-dom';
 
 const CtaSection = () => {
   return (
@@ -11,8 +10,19 @@ const CtaSection = () => {
           <p className="text-lg md:text-xl mb-10 opacity-90 font-light">
             Schedule a discovery call and explore how we can support your brand's next move.
           </p>
-          <Button size="lg" variant="outline" asChild className="rounded-none border-2 border-white text-white hover:bg-white hover:text-[#B14D4D]">
-            <Link to="mailto:hello@mimediaglobal.com">Contact Us</Link>
+          <Button 
+            size="lg" 
+            variant="outline" 
+            asChild 
+            className="rounded-none border-2 border-white text-white hover:bg-white hover:text-[#B14D4D]"
+          >
+            <a 
+              href="https://calendly.com/YOUR-LINK-HERE" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Contact Us
+            </a>
           </Button>
         </div>
       </div>
