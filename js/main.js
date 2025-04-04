@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Language Selector
+  // Language Selector - Updated functionality
   const langItems = document.querySelectorAll('.lang-dropdown li');
   const langButton = document.querySelector('.lang-button span');
   
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
       item.addEventListener('click', function() {
         const lang = this.getAttribute('data-lang');
         const langText = lang.toUpperCase();
-        const langFlag = this.textContent.split(' ')[0];
         
         // Update button text
         langButton.innerHTML = `${langText}`;
@@ -38,8 +37,31 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close dropdown
         document.querySelector('.lang-dropdown').style.display = 'none';
         
-        // In a real implementation, this would change the site language
-        console.log(`Switched to ${lang}`);
+        // Get current page path
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        
+        // Determine target page based on language
+        let targetPage = currentPage;
+        
+        // If we're already on a translated page, get the base page name
+        if (currentPage.includes('_es') || currentPage.includes('_pt')) {
+          targetPage = currentPage.replace('_es.html', '.html').replace('_pt.html', '.html');
+        }
+        
+        // Create the new page path based on the selected language
+        let newPage = targetPage;
+        if (lang === 'es') {
+          newPage = targetPage.replace('.html', '_es.html');
+        } else if (lang === 'pt') {
+          newPage = targetPage.replace('.html', '_pt.html');
+        } else {
+          // Default to English version (no suffix)
+          newPage = targetPage;
+        }
+        
+        // Navigate to the new page
+        window.location.href = newPage;
         
         // Prevent the dropdown from immediately showing again
         setTimeout(() => {

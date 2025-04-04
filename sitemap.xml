@@ -1,6 +1,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- English Pages -->
   <url>
     <loc>https://mimediaglobal.com/</loc>
     <lastmod>2025-04-04</lastmod>
@@ -35,5 +36,79 @@
     <loc>https://mimediaglobal.com/blog-post</loc>
     <lastmod>2025-04-04</lastmod>
     <priority>0.6</priority>
+  </url>
+
+  <!-- Spanish Pages -->
+  <url>
+    <loc>https://mimediaglobal.com/index_es.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/about_es.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/services_es.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/portfolio_es.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/blog_es.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/contact_es.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/blog-post_es.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Portuguese Pages -->
+  <url>
+    <loc>https://mimediaglobal.com/index_pt.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/about_pt.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/services_pt.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/portfolio_pt.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/blog_pt.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/contact_pt.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mimediaglobal.com/blog-post_pt.html</loc>
+    <lastmod>2025-04-04</lastmod>
+    <priority>0.4</priority>
   </url>
 </urlset>
