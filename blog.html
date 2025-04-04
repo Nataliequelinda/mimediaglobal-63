@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - MI Media Global</title>
+    <meta name="description" content="Insights, tips, and updates from the world of digital media and marketing." />
+    <meta name="author" content="MI Media Global" />
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span>Mi Media Global</span>
+          </a>
+          
+          <nav class="main-nav">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html" class="active">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <div class="header-actions">
+            <div class="language-selector">
+              <button class="lang-button">
+                <i data-feather="globe"></i>
+                <span>EN</span>
+              </button>
+              <ul class="lang-dropdown">
+                <li data-lang="en">🇬🇧 English</li>
+                <li data-lang="es">🇪🇸 Español</li>
+                <li data-lang="pt">🇧🇷 Português</li>
+              </ul>
+            </div>
+            <a href="mailto:hello@mimediaglobal.com" class="btn btn-outline">Get a Quote</a>
+          </div>
+          
+          <button class="mobile-menu-toggle">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <div class="container">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:hello@mimediaglobal.com" class="btn btn-outline">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d');">
+        <div class="container">
+          <div class="page-hero-content">
+            <h1>Our Blog</h1>
+            <p>Insights, tips, and updates from the world of digital media and marketing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search and Filter -->
+      <section class="search-section">
+        <div class="container">
+          <div class="search-container">
+            <div class="search-box">
+              <i data-feather="search"></i>
+              <input type="text" id="searchInput" placeholder="Search articles...">
+            </div>
+            
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-category="all">All</button>
+              <button class="filter-btn" data-category="Design">Design</button>
+              <button class="filter-btn" data-category="Marketing">Marketing</button>
+              <button class="filter-btn" data-category="Branding">Branding</button>
+              <button class="filter-btn" data-category="SEO">SEO</button>
+              <button class="filter-btn" data-category="Development">Development</button>
+              <button class="filter-btn" data-category="UX">UX</button>
+              <button class="filter-btn" data-category="E-Commerce">E-Commerce</button>
+              <button class="filter-btn" data-category="Content">Content</button>
+              <button class="filter-btn" data-category="Technology">Technology</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Posts -->
+      <section class="section">
+        <div class="container">
+          <div class="blog-grid" id="blogGrid">
+            <article class="blog-card" data-category="Design">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e" alt="Web Design Trends">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">Design</div>
+                <h2><a href="blog-post.html">5 Web Design Trends to Watch in 2025</a></h2>
+                <p>Discover the latest web design trends that are shaping the digital landscape this year.</p>
+                <div class="blog-meta">
+                  <span>Emily Johnson</span>
+                  <span>April 1, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="Marketing">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7" alt="Social Media Marketing">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">Marketing</div>
+                <h2><a href="blog-post.html">The Ultimate Guide to Social Media Marketing</a></h2>
+                <p>Learn how to create a successful social media strategy that drives engagement and conversions.</p>
+                <div class="blog-meta">
+                  <span>Michael Lee</span>
+                  <span>March 28, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="Branding">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91" alt="Brand Identity">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">Branding</div>
+                <h2><a href="blog-post.html">How to Build a Strong Brand Identity</a></h2>
+                <p>Tips and strategies for creating a memorable brand that resonates with your audience.</p>
+                <div class="blog-meta">
+                  <span>Sarah Davis</span>
+                  <span>March 20, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="SEO">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1546768292-fb12f6c92568" alt="SEO Tips">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">SEO</div>
+                <h2><a href="blog-post.html">The Importance of SEO in Your Digital Strategy</a></h2>
+                <p>Why search engine optimization should be a key component of your overall marketing plan.</p>
+                <div class="blog-meta">
+                  <span>David Wilson</span>
+                  <span>March 15, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="Development">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3" alt="Mobile App Development">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">Development</div>
+                <h2><a href="blog-post.html">Mobile App Development: Native vs. Cross-Platform</a></h2>
+                <p>Comparing the pros and cons of different mobile app development approaches.</p>
+                <div class="blog-meta">
+                  <span>Lisa Brown</span>
+                  <span>March 10, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="UX">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="Website Navigation">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">UX</div>
+                <h2><a href="blog-post.html">Creating User-Friendly Website Navigation</a></h2>
+                <p>Best practices for designing intuitive navigation systems that enhance user experience.</p>
+                <div class="blog-meta">
+                  <span>John Smith</span>
+                  <span>March 5, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="E-Commerce">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="E-Commerce Trends">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">E-Commerce</div>
+                <h2><a href="blog-post.html">The Future of E-Commerce: Trends and Predictions</a></h2>
+                <p>Exploring upcoming e-commerce technologies and strategies for staying ahead of the curve.</p>
+                <div class="blog-meta">
+                  <span>Jennifer White</span>
+                  <span>February 28, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="Content">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5" alt="Content Marketing">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">Content</div>
+                <h2><a href="blog-post.html">Effective Content Marketing Strategies</a></h2>
+                <p>How to create valuable content that attracts and engages your target audience.</p>
+                <div class="blog-meta">
+                  <span>Robert Taylor</span>
+                  <span>February 20, 2025</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="blog-card" data-category="Technology">
+              <a href="blog-post.html" class="blog-image">
+                <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f" alt="AI in Web Development">
+              </a>
+              <div class="blog-content">
+                <div class="blog-tag">Technology</div>
+                <h2><a href="blog-post.html">The Role of AI in Modern Web Development</a></h2>
+                <p>Exploring how artificial intelligence is changing the way we build and interact with websites.</p>
+                <div class="blog-meta">
+                  <span>Emily Johnson</span>
+                  <span>February 15, 2025</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <div id="noResults" class="no-results" style="display: none;">
+            <h3>No articles found</h3>
+            <p>Try adjusting your search or filter to find what you're looking for.</p>
+            <button class="btn btn-primary" id="resetFilters">Reset Filters</button>
+          </div>
+          
+          <!-- Pagination -->
+          <div class="pagination">
+            <button class="pagination-btn" disabled>Previous</button>
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest insights, trends, and news delivered straight to your inbox.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Your email address">
+              <button class="btn btn-light">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3>Mi Media Global</h3>
+            <p>We are a full-service digital agency specializing in branding, web design, digital marketing, and custom software development.</p>
+            <div class="social-links">
+              <a href="https://facebook.com" aria-label="Facebook"><i data-feather="facebook"></i></a>
+              <a href="https://twitter.com" aria-label="Twitter"><i data-feather="twitter"></i></a>
+              <a href="https://instagram.com" aria-label="Instagram"><i data-feather="instagram"></i></a>
+              <a href="https://linkedin.com" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html#branding">Branding & Identity</a></li>
+              <li><a href="services.html#web-design">Web Design & Development</a></li>
+              <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+              <li><a href="services.html#software">Software Development</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i data-feather="map-pin"></i> <span>123 Main Street, City, Country</span></li>
+              <li><i data-feather="phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+              <li><i data-feather="mail"></i> <a href="mailto:info@mimediaglobal.com">info@mimediaglobal.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Mi Media Global. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Initialize Feather icons
+      feather.replace();
+      
+      // Update copyright year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Blog filtering and search functionality
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const blogCards = document.querySelectorAll('.blog-card');
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const resetFilters = document.getElementById('resetFilters');
+      
+      function filterBlog() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-category');
+        
+        let visibleCount = 0;
+        
+        blogCards.forEach(card => {
+          const cardTitle = card.querySelector('h2').textContent.toLowerCase();
+          const cardDesc = card.querySelector('p').textContent.toLowerCase();
+          const cardCategory = card.getAttribute('data-category');
+          
+          const matchesSearch = cardTitle.includes(searchTerm) || cardDesc.includes(searchTerm);
+          const matchesCategory = activeFilter === 'all' || cardCategory === activeFilter;
+          
+          if (matchesSearch && matchesCategory) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        
+        if (visibleCount === 0) {
+          noResults.style.display = 'block';
+        } else {
+          noResults.style.display = 'none';
+        }
+      }
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          filterBlog();
+        });
+      });
+      
+      searchInput.addEventListener('input', filterBlog);
+      
+      resetFilters.addEventListener('click', function() {
+        searchInput.value = '';
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        document.querySelector('[data-category="all"]').classList.add('active');
+        filterBlog();
+      });
+    </script>
+  </body>
+</html>

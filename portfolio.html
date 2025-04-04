@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - MI Media Global</title>
+    <meta name="description" content="Explore our portfolio of branding, web design, and digital marketing projects." />
+    <meta name="author" content="MI Media Global" />
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span>Mi Media Global</span>
+          </a>
+          
+          <nav class="main-nav">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html" class="active">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <div class="header-actions">
+            <div class="language-selector">
+              <button class="lang-button">
+                <i data-feather="globe"></i>
+                <span>EN</span>
+              </button>
+              <ul class="lang-dropdown">
+                <li data-lang="en">🇬🇧 English</li>
+                <li data-lang="es">🇪🇸 Español</li>
+                <li data-lang="pt">🇧🇷 Português</li>
+              </ul>
+            </div>
+            <a href="mailto:hello@mimediaglobal.com" class="btn btn-outline">Get a Quote</a>
+          </div>
+          
+          <button class="mobile-menu-toggle">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <div class="container">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:hello@mimediaglobal.com" class="btn btn-outline">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d');">
+        <div class="container">
+          <div class="page-hero-content">
+            <h1>Our Portfolio</h1>
+            <p>Explore our work and see how we've helped businesses transform their digital presence.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Gallery -->
+      <section class="section">
+        <div class="container">
+          <!-- Filter Buttons -->
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="app">App Development</button>
+            <button class="filter-btn" data-filter="marketing">Marketing</button>
+            <button class="filter-btn" data-filter="multimedia">Multimedia</button>
+          </div>
+          
+          <!-- Projects Grid -->
+          <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="branding">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1600775508114-5c30cf911a40" alt="Brand Redesign">
+                <div class="portfolio-overlay">
+                  <h3>Brand Redesign</h3>
+                  <p>Client: TechStart Inc.</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>Brand Redesign</h3>
+                <p>TechStart Inc.</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="E-Commerce Website">
+                <div class="portfolio-overlay">
+                  <h3>E-Commerce Website</h3>
+                  <p>Client: Fashion Forward</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>E-Commerce Website</h3>
+                <p>Fashion Forward</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="app">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e" alt="Mobile App Development">
+                <div class="portfolio-overlay">
+                  <h3>Mobile App Development</h3>
+                  <p>Client: Health Tracker</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>Mobile App Development</h3>
+                <p>Health Tracker</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="marketing">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7" alt="Social Media Campaign">
+                <div class="portfolio-overlay">
+                  <h3>Social Media Campaign</h3>
+                  <p>Client: Organic Foods Co.</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>Social Media Campaign</h3>
+                <p>Organic Foods Co.</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="web">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d" alt="Corporate Website">
+                <div class="portfolio-overlay">
+                  <h3>Corporate Website</h3>
+                  <p>Client: Global Finance</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>Corporate Website</h3>
+                <p>Global Finance</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="multimedia">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Product Photography">
+                <div class="portfolio-overlay">
+                  <h3>Product Photography</h3>
+                  <p>Client: Luxury Accessories</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>Product Photography</h3>
+                <p>Luxury Accessories</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="marketing">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1546768292-fb12f6c92568" alt="SEO Optimization">
+                <div class="portfolio-overlay">
+                  <h3>SEO Optimization</h3>
+                  <p>Client: Travel Agency</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>SEO Optimization</h3>
+                <p>Travel Agency</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="branding">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91" alt="Logo Design">
+                <div class="portfolio-overlay">
+                  <h3>Logo Design</h3>
+                  <p>Client: Green Energy</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>Logo Design</h3>
+                <p>Green Energy</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item" data-category="app">
+              <div class="portfolio-image">
+                <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1" alt="CRM System">
+                <div class="portfolio-overlay">
+                  <h3>CRM System</h3>
+                  <p>Client: Sales Pro</p>
+                  <button class="btn btn-sm">View Project</button>
+                </div>
+              </div>
+              <div class="portfolio-info">
+                <h3>CRM System</h3>
+                <p>Sales Pro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Case Studies -->
+      <section class="section bg-light">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Featured Case Studies</h2>
+            <p>Dive deeper into our work and explore how we've helped clients achieve their goals.</p>
+          </div>
+          
+          <div class="case-studies-grid">
+            <div class="case-study">
+              <div class="case-study-image">
+                <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f" alt="Case Study 1">
+              </div>
+              <div class="case-study-content">
+                <div class="case-study-tag">Web Development</div>
+                <h3>Transforming Online Presence for TechStart</h3>
+                <p>How we increased conversion rates by 150% with a new website and digital strategy.</p>
+                <button class="btn btn-outline">Read Case Study</button>
+              </div>
+            </div>
+            
+            <div class="case-study">
+              <div class="case-study-image">
+                <img src="https://images.unsplash.com/photo-1522542550496-7eedd2cd2548" alt="Case Study 2">
+              </div>
+              <div class="case-study-content">
+                <div class="case-study-tag">Branding & Marketing</div>
+                <h3>Rebranding Success: The Fashion Forward Story</h3>
+                <p>How our comprehensive rebrand helped Fashion Forward increase market share by 35%.</p>
+                <button class="btn btn-outline">Read Case Study</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3>Mi Media Global</h3>
+            <p>We are a full-service digital agency specializing in branding, web design, digital marketing, and custom software development.</p>
+            <div class="social-links">
+              <a href="https://facebook.com" aria-label="Facebook"><i data-feather="facebook"></i></a>
+              <a href="https://twitter.com" aria-label="Twitter"><i data-feather="twitter"></i></a>
+              <a href="https://instagram.com" aria-label="Instagram"><i data-feather="instagram"></i></a>
+              <a href="https://linkedin.com" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html#branding">Branding & Identity</a></li>
+              <li><a href="services.html#web-design">Web Design & Development</a></li>
+              <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+              <li><a href="services.html#software">Software Development</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i data-feather="map-pin"></i> <span>123 Main Street, City, Country</span></li>
+              <li><i data-feather="phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+              <li><i data-feather="mail"></i> <a href="mailto:info@mimediaglobal.com">info@mimediaglobal.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Mi Media Global. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Initialize Feather icons
+      feather.replace();
+      
+      // Update copyright year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Portfolio filtering
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Get filter value
+          const filter = this.getAttribute('data-filter');
+          
+          // Filter portfolio items
+          portfolioItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

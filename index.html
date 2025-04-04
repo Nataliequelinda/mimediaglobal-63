@@ -16,12 +16,422 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mimediaglobal" />
     <meta name="twitter:image" content="https://mimediaglobal.com/opengraph-image.png" />
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span>Mi Media Global</span>
+          </a>
+          
+          <nav class="main-nav">
+            <ul class="nav-links">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <div class="header-actions">
+            <div class="language-selector">
+              <button class="lang-button">
+                <i data-feather="globe"></i>
+                <span>EN</span>
+              </button>
+              <ul class="lang-dropdown">
+                <li data-lang="en">🇬🇧 English</li>
+                <li data-lang="es">🇪🇸 Español</li>
+                <li data-lang="pt">🇧🇷 Português</li>
+              </ul>
+            </div>
+            <a href="mailto:hello@mimediaglobal.com" class="btn btn-outline">Get a Quote</a>
+          </div>
+          
+          <button class="mobile-menu-toggle">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <div class="container">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:hello@mimediaglobal.com" class="btn btn-outline">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Your outsourced marketing and business team.</h1>
+            <p>We partner with visionary brands and entrepreneurs to deliver strategic clarity, creative direction, and real results — powered by a world-class team based in Latin America.</p>
+            <a href="mailto:hello@mimediaglobal.com" class="btn btn-primary">Let's Work Together <i data-feather="arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <h2>Boutique, agile, and always aligned with your big goals.</h2>
+            <div class="text-content">
+              <p>MI Media is a boutique consultancy working with purpose-driven founders and companies ready to level up. We act as your full-service outsourced team — combining strategy, design, storytelling, and operational expertise from Latin America's top creative minds.</p>
+              <p>Whether you're launching, growing, or rebranding, we help you move with clarity and confidence.</p>
+            </div>
+            <a href="about.html" class="text-link">Learn more about our approach <i data-feather="arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>What We Do</h2>
+          </div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i data-feather="message-circle"></i>
+              </div>
+              <h3>Brand Strategy & Messaging</h3>
+              <p>Clarify your voice, audience, and positioning to stand out with intention.</p>
+              <a href="services.html#branding" class="text-link">Learn More <i data-feather="arrow-right"></i></a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i data-feather="edit-3"></i>
+              </div>
+              <h3>Creative Direction & Identity</h3>
+              <p>From visual style to storytelling, we bring your brand to life.</p>
+              <a href="services.html#creative" class="text-link">Learn More <i data-feather="arrow-right"></i></a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i data-feather="zap"></i>
+              </div>
+              <h3>Campaign & Launch Support</h3>
+              <p>From ideas to execution — we help you launch smarter.</p>
+              <a href="services.html#campaigns" class="text-link">Learn More <i data-feather="arrow-right"></i></a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i data-feather="database"></i>
+              </div>
+              <h3>Marketing Systems & Ops</h3>
+              <p>We build the backend of your business so you can scale sustainably.</p>
+              <a href="services.html#systems" class="text-link">Learn More <i data-feather="arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="section-footer">
+            <a href="services.html" class="btn btn-outline">View All Services <i data-feather="arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experts Section -->
+      <section class="experts-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Meet the Experts Behind the Magic</h2>
+            <p>We work with a curated collective of top-tier strategists, designers, developers, writers, and marketers from across Latin America. Each one vetted, trained, and ready to elevate your brand — all through one seamless point of contact: MI Media.</p>
+          </div>
+          
+          <div class="experts-grid">
+            <div class="expert-card">
+              <div class="expert-image">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=300&h=300" alt="Mariana R.">
+              </div>
+              <div class="expert-info">
+                <h3>Mariana R.</h3>
+                <div class="expert-meta">
+                  <span class="role">UX/UI Designer</span>
+                  <span class="region">Colombia</span>
+                </div>
+                <p>Intuitive, high-conversion digital design for brand-driven startups.</p>
+                <a href="contact.html" class="btn btn-outline">Work with Mariana <i data-feather="arrow-right"></i></a>
+              </div>
+            </div>
+            
+            <div class="expert-card">
+              <div class="expert-image">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=300&h=300" alt="Pedro T.">
+              </div>
+              <div class="expert-info">
+                <h3>Pedro T.</h3>
+                <div class="expert-meta">
+                  <span class="role">Brand Strategist</span>
+                  <span class="region">Brazil</span>
+                </div>
+                <p>Positioning and messaging expert for purpose-led companies.</p>
+                <a href="contact.html" class="btn btn-outline">Work with Pedro <i data-feather="arrow-right"></i></a>
+              </div>
+            </div>
+            
+            <div class="expert-card">
+              <div class="expert-image">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=300&h=300" alt="Ana V.">
+              </div>
+              <div class="expert-info">
+                <h3>Ana V.</h3>
+                <div class="expert-meta">
+                  <span class="role">Marketing Ops</span>
+                  <span class="region">Peru</span>
+                </div>
+                <p>CRM and automation queen — making the backend beautiful.</p>
+                <a href="contact.html" class="btn btn-outline">Work with Ana <i data-feather="arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-footer">
+            <a href="contact.html" class="btn btn-outline">Contact to Work with Our Experts <i data-feather="arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Approach Section -->
+      <section class="approach-section">
+        <div class="container">
+          <div class="approach-grid">
+            <div class="approach-content">
+              <h2>Our Approach</h2>
+              <p>We believe in thoughtful, strategic brand development that begins with understanding your business goals and audience needs. Our collaborative process ensures that every element of your brand strategy serves a purpose and delivers measurable results.</p>
+              
+              <ul class="approach-list">
+                <li><i data-feather="check-circle"></i> Strategic analysis of market positioning</li>
+                <li><i data-feather="check-circle"></i> Audience-centered design methodology</li>
+                <li><i data-feather="check-circle"></i> Iterative development with client collaboration</li>
+                <li><i data-feather="check-circle"></i> Performance measurement and optimization</li>
+              </ul>
+              
+              <a href="about.html" class="btn btn-outline">Our Methodology</a>
+            </div>
+            
+            <div class="approach-image">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team collaboration session">
+              <div class="stat-box">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years of Excellence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Client Experiences</h2>
+            <p>Partnerships built on trust, collaboration, and measurable results.</p>
+          </div>
+          
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="quote-icon"><i data-feather="message-square"></i></div>
+              <p class="testimonial-text">"Their strategic approach transformed how we connect with our audience. The insights they provided were invaluable to our rebrand."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sarah Johnson">
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>CEO, Elevia Partners</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="quote-icon"><i data-feather="message-square"></i></div>
+              <p class="testimonial-text">"Working with this team elevated our brand presence in a competitive market. Their research-driven approach delivered exceptional results."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Michael Thompson">
+                <div class="author-info">
+                  <h4>Michael Thompson</h4>
+                  <p>Marketing Director, Horizon Tech</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="quote-icon"><i data-feather="message-square"></i></div>
+              <p class="testimonial-text">"Their ability to distill complex business challenges into clear strategic direction has been transformative for our company's growth."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Emma Davis">
+                <div class="author-info">
+                  <h4>Emma Davis</h4>
+                  <p>Founder, Atelier Studios</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section class="portfolio-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Selected Work</h2>
+            <p>A glimpse into our strategic brand development projects.</p>
+          </div>
+          
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img src="https://source.unsplash.com/random/800x800?branding,minimal,1" alt="Project 1">
+              </div>
+              <div class="portfolio-info">
+                <h3>Project Title 1</h3>
+                <p>Brand Strategy / Visual Identity</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img src="https://source.unsplash.com/random/800x800?branding,minimal,2" alt="Project 2">
+              </div>
+              <div class="portfolio-info">
+                <h3>Project Title 2</h3>
+                <p>Brand Strategy / Visual Identity</p>
+              </div>
+            </div>
+            
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <img src="https://source.unsplash.com/random/800x800?branding,minimal,3" alt="Project 3">
+              </div>
+              <div class="portfolio-info">
+                <h3>Project Title 3</h3>
+                <p>Brand Strategy / Visual Identity</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-footer">
+            <a href="portfolio.html" class="btn btn-outline">View Portfolio <i data-feather="arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients Section -->
+      <section class="clients-section">
+        <div class="container">
+          <div class="section-header">
+            <p>Trusted Partners</p>
+          </div>
+          
+          <div class="clients-logos">
+            <div class="client-logo">
+              <img src="https://source.unsplash.com/random/200x80?logo,minimal&1" alt="Client 1">
+            </div>
+            <div class="client-logo">
+              <img src="https://source.unsplash.com/random/200x80?logo,minimal&2" alt="Client 2">
+            </div>
+            <div class="client-logo">
+              <img src="https://source.unsplash.com/random/200x80?logo,minimal&3" alt="Client 3">
+            </div>
+            <div class="client-logo">
+              <img src="https://source.unsplash.com/random/200x80?logo,minimal&4" alt="Client 4">
+            </div>
+            <div class="client-logo">
+              <img src="https://source.unsplash.com/random/200x80?logo,minimal&5" alt="Client 5">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Let's Elevate Your Brand Together</h2>
+            <p>Schedule a discovery call and explore how we can support your brand's next move.</p>
+            <a href="https://calendly.com/YOUR-LINK-HERE" target="_blank" rel="noopener noreferrer" class="btn btn-light">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3>Mi Media Global</h3>
+            <p>We are a full-service digital agency specializing in branding, web design, digital marketing, and custom software development.</p>
+            <div class="social-links">
+              <a href="https://facebook.com" aria-label="Facebook"><i data-feather="facebook"></i></a>
+              <a href="https://twitter.com" aria-label="Twitter"><i data-feather="twitter"></i></a>
+              <a href="https://instagram.com" aria-label="Instagram"><i data-feather="instagram"></i></a>
+              <a href="https://linkedin.com" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="services.html#branding">Branding & Identity</a></li>
+              <li><a href="services.html#web-design">Web Design & Development</a></li>
+              <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+              <li><a href="services.html#software">Software Development</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i data-feather="map-pin"></i> <span>123 Main Street, City, Country</span></li>
+              <li><i data-feather="phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+              <li><i data-feather="mail"></i> <a href="mailto:info@mimediaglobal.com">info@mimediaglobal.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Mi Media Global. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Initialize Feather icons
+      feather.replace();
+      
+      // Update copyright year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
